@@ -1,0 +1,14 @@
+/* =========================================================
+   KATALOG
+   Filter kategori, jumlah hasil, dan kotak pesanan custom.
+   ========================================================= */
+
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-bottom:32px}
+.filters .group{display:flex;flex-wrap:wrap;gap:10px}
+.filter{min-height:46px;padding:0 22px;border-radius:999px;border:2px solid #E5CFD6;background:#fff;color:var(--ink);font-family:var(--body);font-weight:600;font-size:15px;cursor:pointer}
+.filter[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.count{font-size:15px;color:var(--muted)}
+
+.custom-box{background:var(--sage);border-radius:36px;padding:clamp(28px,5vw,56px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px;margin-bottom:88px}
+.custom-box h2{font-size:clamp(28px,3.5vw,40px);color:#1F3F2F;margin-bottom:12px}
+.custom-box p{font-size:17px;line-height:1.6;color:#35523F;max-width:520px}

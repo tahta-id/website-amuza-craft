@@ -1,0 +1,55 @@
+/* =========================================================
+   BERANDA
+   Hero, momen, keunggulan, cara pesan, galeri, kontak.
+   ========================================================= */
+
+/* hero */
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:48px;padding-top:24px;padding-bottom:88px}
+.hero-text{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:28px}
+.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.03em}
+.hero p.lead{font-size:19px;line-height:1.6;color:var(--ink-soft);max-width:520px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px}
+.hero-art{flex:1 1 420px;min-width:0;background:var(--pink);border-radius:40px;padding:40px 24px 28px;display:flex;flex-direction:column;align-items:center;gap:24px}
+.hero-art svg{width:min(100%,400px);height:auto}
+
+/* momen */
+.moments-bg{background:#fff}
+.moments{display:flex;flex-wrap:wrap;gap:20px}
+.moment{flex:1 1 240px;min-height:200px;padding:28px;border-radius:28px;display:flex;flex-direction:column;justify-content:space-between}
+.moment b{font-family:var(--display);font-size:28px}
+.moment span{display:flex;justify-content:space-between;align-items:center;font-size:15px}
+
+/* keunggulan */
+.why{background:var(--sage);color:#1F3F2F}
+.why h2{max-width:640px;margin-bottom:48px}
+.why-cols{display:flex;flex-wrap:wrap;gap:32px}
+.why-col{flex:1 1 260px;display:flex;flex-direction:column;gap:14px}
+.why-col .ico{width:56px;height:56px;border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center}
+.why-col h3{font-size:24px}
+.why-col p{font-size:17px;line-height:1.6;color:#35523F}
+
+/* cara pesan */
+.steps-bg{background:var(--ink);color:var(--bg)}
+.steps{display:flex;flex-wrap:wrap;gap:24px;margin-top:48px}
+.step{flex:1 1 230px;padding:28px;border-radius:24px;background:#3B2832;display:flex;flex-direction:column;gap:12px}
+.step .n{font-family:var(--display);font-weight:700;font-size:44px;color:#F6A6C0}
+.step h3{font-family:var(--body);font-size:20px;font-weight:600;letter-spacing:0}
+.step p{font-size:16px;line-height:1.6;color:#E4D3DA}
+
+/* galeri */
+.gallery{display:flex;flex-wrap:wrap;gap:14px}
+.gallery div{flex:1 1 160px;min-width:0;aspect-ratio:1/1;border-radius:24px;display:flex;align-items:center;justify-content:center}
+.gallery svg{width:62%;height:auto}
+
+/* kontak */
+.contact{background:var(--pink)}
+.contact-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px;margin-bottom:64px}
+.contact-top h2{max-width:620px;font-size:clamp(34px,5vw,60px);line-height:1.05;letter-spacing:-.03em}
+.contact-cols{display:flex;flex-wrap:wrap;gap:40px 64px;padding-top:40px;border-top:1px solid rgba(42,26,36,.18)}
+.contact-cols > div{display:flex;flex-direction:column;gap:6px;font-size:16px}
+.contact-cols .brand{flex:2 1 280px;gap:12px}
+.contact-cols .brand p{line-height:1.6;color:var(--ink-soft);max-width:340px}
+.contact-cols .col{flex:1 1 200px}
+.contact-cols .col b{margin-bottom:6px}
+.contact-cols .col a,.contact-cols .col span{padding:8px 0}
+.copy{font-size:14px;color:var(--ink-soft);margin-top:40px}

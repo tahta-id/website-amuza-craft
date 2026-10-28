@@ -1,0 +1,32 @@
+/* =========================================================
+   KOMPONEN
+   Elemen yang dipakai ulang di beberapa halaman:
+   badge, chip, kartu produk, header halaman, breadcrumb.
+   ========================================================= */
+
+/* badge & chip */
+.badge{align-self:flex-start;padding:8px 16px;border-radius:999px;background:var(--pink);color:#8E1744;font-weight:600;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.chip{padding:8px 16px;border-radius:999px;background:#fff;font-weight:500;font-size:14px}
+
+/* kartu produk */
+.grid{display:flex;flex-wrap:wrap;gap:24px}
+.card{flex:1 1 300px;min-width:0;max-width:100%;background:#fff;border-radius:28px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .2s}
+.card:hover{transform:translateY(-4px);opacity:1}
+.card .art{height:320px;display:flex;align-items:center;justify-content:center;padding:24px}
+.card .art svg{width:70%;max-width:240px;height:auto}
+.card .info{padding:22px 24px 26px;display:flex;flex-direction:column;gap:6px}
+.card .cat{font-size:14px;font-weight:600;color:var(--muted)}
+.card .name{font-family:var(--display);font-weight:700;font-size:24px}
+.card .price{font-size:16px;color:var(--ink-soft)}
+.grid.small .art{height:260px}
+
+/* header halaman dalam */
+.page-hero{background:var(--pink)}
+.page-hero .wrap{padding-top:56px;padding-bottom:64px;display:flex;flex-direction:column;gap:18px}
+.page-hero h1{font-size:clamp(38px,5vw,64px);letter-spacing:-.03em;line-height:1.05}
+.page-hero p{max-width:560px;font-size:18px;line-height:1.6;color:var(--ink-soft)}
+
+/* breadcrumb */
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;font-size:15px;color:var(--muted)}
+.crumbs a{color:var(--muted)}

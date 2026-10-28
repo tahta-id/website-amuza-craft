@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Detail Produk — amuza.craft</title>
+<meta name="description" content="Detail bucket flower handmade amuza.craft. Pilih ukuran, tambahan, dan kirim ucapanmu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+<!-- Catatan: header & footer sama di ketiga halaman (index.html, katalog.html, produk.html). -->
+<div class="topbar">Dirangkai dengan tangan, dikirim dengan sayang.</div>
+
+<header class="site wrap">
+  <a href="index.html" class="logo" aria-label="amuza.craft, ke beranda">amuza<i>.</i>craft</a>
+  <nav class="main" aria-label="Menu utama">
+    <a href="index.html">Beranda</a>
+    <a href="katalog.html" class="active" aria-current="page">Katalog</a>
+    <a href="index.html#cara-pesan">Cara pesan</a>
+    <a href="index.html#kontak">Kontak</a>
+  </nav>
+  <a class="btn btn-primary btn-sm" data-wa href="#" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+    Pesan sekarang
+  </a>
+</header>
+
+<main>
+
+  <nav class="wrap crumbs" aria-label="Jejak halaman" style="padding-top:8px;padding-bottom:24px">
+    <a href="index.html">Beranda</a><span aria-hidden="true">/</span><a href="katalog.html">Katalog</a><span aria-hidden="true">/</span><span style="color:var(--ink)" id="crumb-name"></span>
+  </nav>
+
+  <section class="wrap detail">
+    <div class="detail-art">
+      <div class="frame" id="d-frame"></div>
+      <small>[FOTO PRODUK ASLI] ditempatkan di sini. Ilustrasi hanya sebagai gambaran.</small>
+    </div>
+    <div class="detail-info">
+      <div>
+        <span class="badge" id="d-cat"></span>
+        <h1 id="d-name"></h1>
+        <div class="price" id="d-price"></div>
+        <p class="desc" id="d-desc"></p>
+      </div>
+      <fieldset><legend>Pilih ukuran</legend><div class="sizes" id="d-sizes"></div></fieldset>
+      <fieldset><legend>Tambahan</legend><div class="addons" id="d-addons"></div></fieldset>
+      <div class="field">
+        <label for="ucapan">Tulis ucapanmu</label>
+        <input id="ucapan" type="text" placeholder="Contoh: Selamat ulang tahun, semoga hari-harimu manis">
+      </div>
+      <div class="order">
+        <div><span class="lbl">Pesananmu</span><div class="sum" id="d-sum"></div></div>
+        <a class="btn btn-primary" id="d-order" href="#" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+          Pesan lewat WhatsApp
+        </a>
+        <small>Pesananmu dikonfirmasi lewat chat. [KEBIJAKAN PEMESANAN &amp; PENGIRIMAN]</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-bg">
+    <div class="wrap info-cols">
+      <div class="info-card" style="background:var(--bg)">
+        <h2>Isi rangkaian</h2>
+        <ul style="color:var(--ink-soft)"><li>[JENIS BUNGA UTAMA]</li><li>[JENIS BUNGA PENDAMPING]</li><li>Daun hijau sebagai filler</li><li>Bucket cantik sebagai wadah</li></ul>
+      </div>
+      <div class="info-card" style="background:var(--sage);color:#1F3F2F">
+        <h2>Tips perawatan</h2>
+        <ul style="color:#35523F"><li>Letakkan jauh dari sinar matahari langsung.</li><li>Potong ujung tangkai secara miring.</li><li>Ganti air secara berkala agar tetap segar.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap block">
+    <h2 class="sec-title" style="margin-bottom:36px;font-size:clamp(30px,4vw,44px)">Mungkin kamu suka</h2>
+    <div class="grid small" id="related"></div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span class="logo">amuza<i>.</i>craft</span>
+    <nav aria-label="Menu footer"><a href="index.html">Beranda</a><a href="katalog.html">Katalog</a><a href="https://www.instagram.com/amuza.craft" target="_blank" rel="noopener">@amuza.craft</a></nav>
+    <small>© 2026 amuza.craft</small>
+  </div>
+</footer>
+
+<!-- JS: data -> helper -> logika halaman -->
+<script src="js/data.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
